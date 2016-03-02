@@ -14,6 +14,11 @@
 		6F14ACD41C3E31E8007F0B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F14ACD21C3E31E8007F0B52 /* LaunchScreen.storyboard */; };
 		6F14ACDF1C3E31E9007F0B52 /* MemoryGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14ACDE1C3E31E9007F0B52 /* MemoryGameTests.swift */; };
 		6F14ACEA1C3E31E9007F0B52 /* MemoryGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14ACE91C3E31E9007F0B52 /* MemoryGameUITests.swift */; };
+		6F14ACF81C3E4DAB007F0B52 /* MemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14ACF71C3E4DAB007F0B52 /* MemoryViewController.swift */; };
+		6F14AD2D1C40F239007F0B52 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14AD2C1C40F238007F0B52 /* main.swift */; };
+		6F20FEFC1C814681004CAE02 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F20FEFB1C814681004CAE02 /* Deck.swift */; };
+		6F20FEFE1C8146C6004CAE02 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F20FEFD1C8146C6004CAE02 /* Card.swift */; };
+		6F20FF001C858F4D004CAE02 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F20FEFF1C858F4D004CAE02 /* CardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		6F14ACE51C3E31E9007F0B52 /* MemoryGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F14ACE91C3E31E9007F0B52 /* MemoryGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameUITests.swift; sourceTree = "<group>"; };
 		6F14ACEB1C3E31E9007F0B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F14ACF71C3E4DAB007F0B52 /* MemoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryViewController.swift; sourceTree = "<group>"; };
+		6F14AD2C1C40F238007F0B52 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6F20FEFB1C814681004CAE02 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		6F20FEFD1C8146C6004CAE02 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		6F20FEFF1C858F4D004CAE02 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,15 @@
 			children = (
 				6F14ACC91C3E31E8007F0B52 /* AppDelegate.swift */,
 				6F14ACCB1C3E31E8007F0B52 /* ViewController.swift */,
+				6F20FEFB1C814681004CAE02 /* Deck.swift */,
+				6F20FEFD1C8146C6004CAE02 /* Card.swift */,
+				6F14ACF71C3E4DAB007F0B52 /* MemoryViewController.swift */,
 				6F14ACCD1C3E31E8007F0B52 /* Main.storyboard */,
 				6F14ACD01C3E31E8007F0B52 /* Assets.xcassets */,
+				6F20FEFF1C858F4D004CAE02 /* CardCell.swift */,
 				6F14ACD21C3E31E8007F0B52 /* LaunchScreen.storyboard */,
 				6F14ACD51C3E31E9007F0B52 /* Info.plist */,
+				6F14AD2C1C40F238007F0B52 /* main.swift */,
 			);
 			path = MemoryGame;
 			sourceTree = "<group>";
@@ -256,7 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F20FF001C858F4D004CAE02 /* CardCell.swift in Sources */,
+				6F14ACF81C3E4DAB007F0B52 /* MemoryViewController.swift in Sources */,
+				6F20FEFE1C8146C6004CAE02 /* Card.swift in Sources */,
 				6F14ACCC1C3E31E8007F0B52 /* ViewController.swift in Sources */,
+				6F20FEFC1C814681004CAE02 /* Deck.swift in Sources */,
+				6F14AD2D1C40F239007F0B52 /* main.swift in Sources */,
 				6F14ACCA1C3E31E8007F0B52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +502,7 @@
 				6F14ACF01C3E31E9007F0B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F14ACF11C3E31E9007F0B52 /* Build configuration list for PBXNativeTarget "MemoryGameTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +511,7 @@
 				6F14ACF31C3E31E9007F0B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F14ACF41C3E31E9007F0B52 /* Build configuration list for PBXNativeTarget "MemoryGameUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +520,7 @@
 				6F14ACF61C3E31E9007F0B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
